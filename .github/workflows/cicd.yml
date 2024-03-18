@@ -30,12 +30,12 @@ jobs:
       - uses: actions/checkout@v3
       - name: Validate
         run: |
-          ./scripts/validate_input.bat SAG_WPM_TOKEN "$SAG_WPM_TOKEN"
-          ./scripts/validate_input.bat DOCKER_REGISTRY "$DOCKER_REGISTRY"
-          ./scripts/validate_input.bat DOCKER_USER "$DOCKER_USER"
-          ./scripts/validate_input.bat DOCKER_PASSWORD "$DOCKER_PASSWORD"
-          ./scripts/validate_input.bat SAG_CR_USER "$SAG_CR_USER"
-          ./scripts/validate_input.bat SAG_CR_PASSWORD "$SAG_CR_PASSWORD"
+          ./scripts/validate_input.sh SAG_WPM_TOKEN "$SAG_WPM_TOKEN"
+          ./scripts/validate_input.sh DOCKER_REGISTRY "$DOCKER_REGISTRY"
+          ./scripts/validate_input.sh DOCKER_USER "$DOCKER_USER"
+          ./scripts/validate_input.sh DOCKER_PASSWORD "$DOCKER_PASSWORD"
+          ./scripts/validate_input.sh SAG_CR_USER "$SAG_CR_USER"
+          ./scripts/validate_input.sh SAG_CR_PASSWORD "$SAG_CR_PASSWORD"
 
   build:
     needs: [init]
