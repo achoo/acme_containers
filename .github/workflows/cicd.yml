@@ -7,7 +7,7 @@ on:
 env:
   #################################
   ### Container image specifics ###
-  PACKAGES: 'WmJDBCAdapter, WmIBMPowerAdapter'
+  PACKAGES: 'WmJDBCAdapter'
   CUSTOM_PACKAGES: ''
   CUSTOM_PACKAGES_ORG_URL: ''
   ##################################
