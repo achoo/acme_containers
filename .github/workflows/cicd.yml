@@ -7,7 +7,8 @@ on:
 env:
   #################################
   ### Container image specifics ###
-  PACKAGES: 'WmJDBCAdapter'
+  ### separate packages with space in the list ###
+  PACKAGES: 'WmJDBCAdapter WmSAP WmE2EMAPIAgent'
   CUSTOM_PACKAGES: ''
   CUSTOM_PACKAGES_ORG_URL: ''
   ##################################
